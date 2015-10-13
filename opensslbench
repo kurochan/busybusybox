@@ -1,2 +1,5 @@
 #!/bin/bash
-openssl speed -multi $(cat /proc/cpuinfo | grep processor | wc -l)
+
+while true; do
+  openssl speed -multi $(cat /proc/cpuinfo | grep processor | wc -l)
+done
